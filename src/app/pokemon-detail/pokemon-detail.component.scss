@@ -1,0 +1,79 @@
+.pokemon-details {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #fe3e3e;
+  }
+  
+  .pokemon-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .info-item {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-item p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555555;
+  }
+  
+  .abilities-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+  }
+  
+  .abilities-list li {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #777777;
+  }
+  

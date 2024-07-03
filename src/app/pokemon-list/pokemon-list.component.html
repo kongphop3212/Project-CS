@@ -1,0 +1,11 @@
+<div class="pokemon-list">
+    <div class="pokemon-card" *ngFor="let pokemon of pokemons">
+      <a class="pokemon-link" [routerLink]="'/pokemon/' + getPokemonId(pokemon.url)">
+        <div class="pokemon-info">
+          <img class="pokemon-image" [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + getPokemonId(pokemon.url) + '.png'" alt="{{ pokemon.name }}">
+          <p class="pokemon-name">{{ pokemon.name }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  

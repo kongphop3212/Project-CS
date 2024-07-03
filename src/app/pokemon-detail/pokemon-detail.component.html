@@ -1,0 +1,23 @@
+<div class="pokemon-details">
+  <div class="header">
+    <h2>{{ pokemon.name }}</h2>
+    <button class="back-button" (click)="goBack()">Back to List</button>
+  </div>
+  <div class="content">
+    <img class="pokemon-image" [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + pokemon.id + '.png'" alt="{{ pokemon.name }}">
+    <div class="pokemon-info">
+      <div class="info-item">
+        <p><strong>Weight:</strong> {{ pokemon.weight }}</p>
+      </div>
+      <div class="info-item">
+        <p><strong>Height:</strong> {{ pokemon.height }}</p>
+      </div>
+      <div class="info-item">
+        <p><strong>Abilities:</strong></p>
+        <ul class="abilities-list">
+          <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
